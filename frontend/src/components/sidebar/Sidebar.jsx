@@ -8,7 +8,8 @@ export default function Sidebar() {
 
   useEffect(() => {
     const getCats = async () => {
-      const res = await axios.get("http://localhost:5000/api/categories");
+      // const res = await axios.get("http://localhost:5000/api/categories");
+      const res = await axios.get("https://mern-stack-blog-5oqp.vercel.app/api/categories");
       setCats(res.data);
     };
     getCats();

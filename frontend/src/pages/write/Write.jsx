@@ -27,7 +27,8 @@ export default function Write() {
       } catch (err) {}
     }
     try {
-      const res = await axios.post("http://localhost:5000/api/posts", newPost);
+      // const res = await axios.post("http://localhost:5000/api/posts", newPost);
+      const res = await axios.post("https://mern-stack-blog-5oqp.vercel.app/api/posts", newPost);
       window.location.replace("/post/" + res.data._id);
     } catch (err) {}
   };

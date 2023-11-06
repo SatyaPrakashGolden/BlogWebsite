@@ -13,7 +13,7 @@ const search = useLocation().search;
 // console.log(search);
 useEffect(() => {
   const fetchPosts = async () => {
-    const apiUrl = "http://localhost:5000/api/posts" + search;
+    const apiUrl = "https://mern-stack-blog-5oqp.vercel.app/api/posts" + search;
     try {
       const res = await axios.get(apiUrl);
       console.log(res.data);
